@@ -28,15 +28,15 @@ Prerequisites
 Installation
 ---------
 
-Download, unzip and copy the source code folder "SCapp" to your computer. Create a new gemset. Install all the dependencies specified in the Gemfile with bundler.
+Download, unzip and copy the source code folder "sales-taxes-problem-master" to your computer. Create a new gemset. Install all the dependencies specified in the Gemfile with bundler.
 
 ```
-$ cd SCapp
+$ cd sales-taxes-problem-master
 
 $ rvm gemset create MYgemset
 $ echo rvm 2.2.1@MYgemset --create > .rvmrc
 $ cd ..
-$ cd SCapp
+$ cd sales-taxes-problem-master
 
 $ bundle install
 ```
@@ -64,7 +64,7 @@ Run the app in localhost
 Run rails server and reach the app through the browser in localhost on the default port 3000.
 
 ```
-$ cd SCapp
+$ cd sales-taxes-problem-master
 $ rails s
 
 http://localhost:3000
