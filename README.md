@@ -45,7 +45,7 @@ $ bundle install
 
 Database creation
 ---
-Let's use "sqlite3" for simplicity as configured in the database yaml configuration file **/config/database.yml**
+Let's use "sqlite3" for simplicity as configured in the database yaml configuration file **/config/database.yml**.
 Recreate the database schema through the migrations.
 
 ```
