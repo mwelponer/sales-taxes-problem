@@ -1,0 +1,29 @@
+<div class="well">
+  <div class="row">
+    <div class="col-xs-9">
+      <h4><%= product.name %></h4>
+    </div>
+    <div class="col-xs-3">
+      
+      <%= form_for order_item, remote: true do |f| %>
+        <h4 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency product.price %></span></h4>
+        <h6 class="text-right">Basic Sales Tax: <span style="color: red"><%= number_to_currency order_item.basic_sale_tax %></span></h6>
+        <h6 class="text-right"><span class="text-right"> Import Duty: <span style="color: red"><%= number_to_currency order_item.import_tax %></span></h6>
+        <div class="row">
+          <div class="col-xs-4">
+            <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
+            <%= f.hidden_field :product_id, value: product.id %>
+          </div>
+          <div class="col-xs-8 text-right">
+            <div class="btn-group">
+              <%= f.submit "Update", class: "btn btn-primary" %>
+              <%= link_to "Delete", order_item, { data: { confirm: "Are you sure you want to remove #{order_item.quantity.to_i} '#{order_item.product.name}' from the cart?" }, method: :delete, remote: true, class: "btn btn-danger" } %>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-right">Total Price: <span style="color: green"><%= number_to_currency order_item.total_price %></span></h4>
+      <% end %>
+    </div>
+    
+  </div>
+</div>
