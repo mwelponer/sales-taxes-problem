@@ -61,9 +61,9 @@ Initialize the database with the products, as specified in the seeds file **/db/
 $ rake db:seed
 ```
 
-Run the app in localhost
+Run the application on localhost
 ---------
-Run rails server and reach the app through the browser in localhost on the default port 3000.
+Run rails server and reach the app through the browser on localhost on the default port 3000.
 
 ```
 $ cd sales-taxes-problem-master
