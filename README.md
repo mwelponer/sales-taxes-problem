@@ -1,7 +1,7 @@
 README
 =======
 
-Michele Welponer, a simple shopping cart.
+A simple shopping cart.
 Copyright (C) 2016  Michele Welponer
 
 This program is free software: you can redistribute it and/or modify
@@ -28,7 +28,9 @@ Prerequisites
 Installation
 ---------
 
-Download, unzip and copy the source code folder "sales-taxes-problem-master" to your computer. Create a new gemset. Install all the dependencies specified in the Gemfile with bundler.
+Download, unzip and copy the source code folder "sales-taxes-problem-master" to your computer. 
+Create a new gemset. 
+Install all the dependencies specified in the Gemfile with bundler.
 
 ```
 $ cd sales-taxes-problem-master
