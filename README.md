@@ -61,7 +61,7 @@ Initialize the database with the products, as specified in the seeds file **/db/
 $ rake db:seed
 ```
 
-Run the application on localhost
+Run the application
 ---------
 Run rails server and reach the app through the browser on localhost on the default port 3000.
 
